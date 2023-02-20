@@ -1,0 +1,14 @@
+{
+  "name": "Twitter Filter",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Filter Twitter Feed To Only Show High Quality Content",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
